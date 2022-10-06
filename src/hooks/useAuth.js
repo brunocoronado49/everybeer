@@ -4,7 +4,7 @@ import { authContext } from '../context/authContext'
 
 /// Using the context created
 export const useAuth = () => {
-  const contextAuth = useContext(context)
+  const contextAuth = useContext(authContext)
   if (!contextAuth) throw new Error("No hay contexto.")
   return contextAuth;
 }

@@ -1,0 +1,30 @@
+.login-component, .register-component {
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  margin: 40px;
+}
+
+.auth-logo {
+  padding-bottom: 5%;
+}
+
+.card-login, .card-register {
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+.title-auth {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.input-auth {
+  width: 30%;
+  margin: 20px;
+}
+
+.btn-login {
+  margin: 10px
+}
