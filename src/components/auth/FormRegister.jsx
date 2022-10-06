@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
+import { Link } from "react-router-dom";
 import { AlertFailure } from "../home/Alert";
 import { useSignUpHook } from "../../hooks/useAuth";
 
@@ -50,9 +50,9 @@ const FormRegister = () => {
           </Button>
         </div>
       </form>
-      <a href="/login">
-        <p>¿Ya tienes una cuenta?  Inicia sesión</p>
-      </a>
+      <Link to="/login" className="link">
+        ¿Ya tienes una cuenta? Inicia sesión
+      </Link>
     </div>
   );
 };

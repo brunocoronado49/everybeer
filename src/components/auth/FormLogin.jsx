@@ -1,6 +1,7 @@
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
+import { Link } from "react-router-dom";
 import { AlertFailure, AlertInfo } from "../home/Alert";
 import { useLoginHook } from "../../hooks/useAuth";
 
@@ -60,9 +61,9 @@ const FormLogin = () => {
       <br />
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={6}>
-          <a href="/register">
-            <p>¿No tienes una cuenta?</p>
-          </a>
+          <Link to="/register" className="link">
+            ¿No tienes una cuenta?
+          </Link>
         </Grid>
         <Grid item xs={6}>
           <a href="#">
