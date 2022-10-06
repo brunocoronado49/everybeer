@@ -87,4 +87,17 @@ export const useLoginHook = () => {
 export const useLogoutHook = () => {
   const { logout, user } = useAuth();
   const navigate = useNavigate();
+
+  const onLogoutSubmit = async evt => {
+    evt.preventDefault();
+
+    try {
+      await logout();
+      navigate("/login");
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  return { onLogoutSubmit, user }
 }
