@@ -47,6 +47,10 @@ const FormLogin = () => {
             onChange={onChange}
           />
         </div>
+        <a href="#">
+          <p onClick={onResetPassword}>¿Olvidaste tu contraseña?</p>
+        </a>
+        <br />
         <div className="btn-login">
           <Button
             variant="contained"
@@ -59,16 +63,13 @@ const FormLogin = () => {
         </div>
       </form>
       <br />
+      <br />
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={6}></Grid>
         <Grid item xs={6}>
           <Link to="/register" className="link">
             ¿No tienes una cuenta?
           </Link>
-        </Grid>
-        <Grid item xs={6}>
-          <a href="#">
-            <p onClick={onResetPassword}>¿Olvidaste tu contraseña?</p>
-          </a>
         </Grid>
       </Grid>
     </div>

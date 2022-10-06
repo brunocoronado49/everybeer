@@ -1,9 +1,15 @@
-import React from 'react'
+import { Link } from "react-router-dom";
+import { useLogoutHook } from "../../hooks/useAuth";
 
 const Feed = () => {
-  return (
-    <div>Feed</div>
-  )
-}
+  const { onLogoutSubmit, user } = useLogoutHook();
 
-export default Feed
+  return (
+    <div>
+      Feed - { user.email }
+      <button onClick={onLogoutSubmit}>Cerrar sesión</button>
+    </div>
+  );
+};
+
+export default Feed;
