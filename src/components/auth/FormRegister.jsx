@@ -50,9 +50,12 @@ const FormRegister = () => {
           </Button>
         </div>
       </form>
+      <br />
       <Link to="/login" className="link">
         ¿Ya tienes una cuenta? Inicia sesión
       </Link>
+      <br />
+      <br />
     </div>
   );
 };

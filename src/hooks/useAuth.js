@@ -61,6 +61,7 @@ export const useLoginHook = () => {
       navigate("/")
     } catch (error) {
       setError(error.message)
+      setSuccess(false)
     }
   }
 
